@@ -135,4 +135,12 @@ LOGOUT_REDIRECT_URL = "home"  # new
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"  # new
 
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+DEFAULT_FROM_EMAIL = "lwinminko@ucsm.edu.mm"
+EMAIL_HOST = "smtp.sendgrid.net"
+EMAIL_HOST_USER = "apikey"
+EMAIL_HOST_PASSWORD = (
+    "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"
+)
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
